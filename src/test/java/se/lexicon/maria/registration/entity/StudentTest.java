@@ -20,7 +20,7 @@ public class StudentTest {
         testObject.setGender("Female");
         testObject.setEmail("svantematte@hotmail.com");
         testObject.setPhoneNumber("+46703141108");
-        testObject.setRegisterDate(LocalDate.now());
+        testObject.setRegisterDate(LocalDate.of(2020, 12, 07));
         testObject.setStatus(true);
     }
 
@@ -33,7 +33,7 @@ public class StudentTest {
         Assertions.assertEquals("Female", testObject.getGender());
         Assertions.assertEquals("svantematte@hotmail.com", testObject.getEmail());
         Assertions.assertEquals("+46703141108", testObject.getPhoneNumber());
-        Assertions.assertEquals(LocalDate.parse("2021-04-23"), testObject.getRegisterDate());
+        Assertions.assertEquals(LocalDate.parse("2020-12-07"), testObject.getRegisterDate());
         Assertions.assertTrue(testObject.isStatus());
 
         System.out.println("New student created");
@@ -50,7 +50,7 @@ public class StudentTest {
         Assertions.assertEquals("Female", testObject.getGender());
         Assertions.assertEquals("svantematte@hotmail.com", testObject.getEmail());
         Assertions.assertEquals("+46703141108", testObject.getPhoneNumber());
-        Assertions.assertEquals(LocalDate.parse("2021-04-23"), testObject.getRegisterDate());
+        Assertions.assertEquals(LocalDate.parse("2020-12-07"), testObject.getRegisterDate());
         Assertions.assertTrue(testObject.isStatus());
 
         System.out.println("Equals test passed");
@@ -66,7 +66,7 @@ public class StudentTest {
         Assertions.assertEquals("Female", testObject.getGender());
         Assertions.assertEquals("svantematte@hotmail.com", testObject.getEmail());
         Assertions.assertEquals("+46703141108", testObject.getPhoneNumber());
-        Assertions.assertEquals(LocalDate.parse("2021-04-23"), testObject.getRegisterDate());
+        Assertions.assertEquals(LocalDate.parse("2020-12-07"), testObject.getRegisterDate());
         Assertions.assertTrue(testObject.isStatus());
 
         System.out.println("HashCode test passed");
